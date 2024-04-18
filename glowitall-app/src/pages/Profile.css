@@ -1,0 +1,45 @@
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin: 0 auto; /* Added to center the profile picture */
+  }
+  
+  .default-profile-pic {
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin: 0 auto; /* Added to center the default profile picture */
+  }
+
+.profile-pic-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.profile-pic-upload-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-pic-upload:hover .profile-pic-upload-overlay {
+  opacity: 1;
+}
